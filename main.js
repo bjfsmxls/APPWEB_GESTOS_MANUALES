@@ -56,7 +56,7 @@ function gotResult(error, results) {
     }
     else if(gesture == "victoria")
     {
-      toSpeak = "Eso fue una victoria maravillosa";
+      toSpeak = "Esa fue una victoria maravillosa";
       document.getElementById("result_object_gesture_icon").innerHTML = "&#9996;";
     }
 
