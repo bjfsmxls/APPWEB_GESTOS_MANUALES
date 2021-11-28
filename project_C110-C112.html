@@ -1,7 +1,7 @@
  
 <html>
   <head>
-    <title>gesture Web App</title>
+    <title>Aplicación web de gestos manuales</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -17,7 +17,7 @@
   <div class="container">
   
     <center>
-      <h3 class="btn btn-info heading">GESTURE WEB APP
+      <h3 class="btn btn-info heading">APLICACIÓN WEB DE GESTOS MANUALES
       <br>
       <span>&#128076;</span>
       <span>&#128077;</span>
@@ -29,30 +29,30 @@
 
       <br><br>
 
-      <p style="font-size: 22px;">Take a selfie of a gesture to know about it's meaning</p>
-      <p style="font-size: 18px;">On the following gestures the model is trained - </p>
+      <p style="font-size: 22px;">Toma una selfie de un gesto para conocer su significado.</p>
+      <p style="font-size: 18px;">En los siguientes gestos se entrena el modelo - </p>
       <p style="font-size: 30px;">
         &#128076; | &#128077; | &#9996;
       </p>
 
       <div class="col-md-4 col-sm-12 col-xs-12">
-        <label>Webcam View - </label>
+        <label>Vista de la camara web - </label>
         <div id="camera"></div>
         <br><br>
-        <button onclick="take_snapshot();" class="btn btn-primary">Capture Image</button>
+        <button onclick="take_snapshot();" class="btn btn-primary">Capturar imagen</button>
       </div>
 
       <div class="col-md-4 col-sm-12 col-xs-12">
-        <label>Prediction - </label>
+        <label>Predicción - </label>
         <p class="object_name" id="result_object_name"></p>
         <p class="gesture_icon" id="result_object_gesture_icon"></p>
       </div>
 
       <div class="col-md-4 col-sm-12 col-xs-12">
-        <label>Snapshot - </label>
+        <label>Instantánea - </label>
         <div id="result"></div>
         <br><br>
-        <button onclick="check();" class="btn btn-success">Predict Hand Gesture</button>
+        <button onclick="check();" class="btn btn-success">Predecir el gesto manual</button>
        </div>
 
     </center>
