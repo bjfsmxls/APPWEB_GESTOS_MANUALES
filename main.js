@@ -20,7 +20,7 @@ function take_snapshot()
 
   console.log('ml5 version:', ml5.version);
   
-classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/Ubm6U4oHk/model.json',modelLoaded);
+classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/ONBpZhaUy/model.json',modelLoaded);
 
   function modelLoaded() {
     console.log('Model Loaded!');
@@ -44,17 +44,17 @@ function gotResult(error, results) {
     
     toSpeak = "";
     
-    if(gesture == "genial")
+    if(gesture == "GENIAL")
     {
       toSpeak = "Esto se ve genial";
       document.getElementById("result_object_gesture_icon").innerHTML = "&#128076;";
     }
-    else if(gesture == "bien")
+    else if(gesture == "BIEN")
     {
       toSpeak = "Todo bien";
       document.getElementById("result_object_gesture_icon").innerHTML = "&#128077;";
     }
-    else if(gesture == "victoria")
+    else if(gesture == "VICTORIA")
     {
       toSpeak = "Esa fue una victoria maravillosa";
       document.getElementById("result_object_gesture_icon").innerHTML = "&#9996;";
